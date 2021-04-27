@@ -3,7 +3,7 @@
   "modid": "thermsingul",
   "name": "Thermal Singularities",
   "description": "bringing Thermal Singularities to Avaritia!",
-  "version": "1.2",
+  "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "http://minecraft.curseforge.com/projects/thermal-singularities",
   "updateUrl": "",
