@@ -2,6 +2,7 @@ package wanion.thermsingul.proxy;
 
 import com.google.common.collect.ImmutableSet;
 import cpw.mods.fml.common.registry.GameRegistry;
+import fox.spiteful.avaritia.crafting.CompressOreRecipe;
 import fox.spiteful.avaritia.crafting.CompressorManager;
 import fox.spiteful.avaritia.crafting.Grinder;
 import net.minecraft.item.ItemStack;
@@ -48,7 +49,7 @@ public class CommonProxy
         int i = 0;
         for (final String singularityType : ThermalSingularityItem.thermTypes) {
             if (allowed.contains(singularityType)) {
-                CompressorManager.addOreRecipe(new ItemStack(ThermalSingularityItem.instance, 1, i), ThermalSingularityItem.recipeValues[i], oreNames[i]);
+                CompressorManager.getRecipes().add(new CompressOreRecipe(new ItemStack(ThermalSingularityItem.instance, 1, i), ThermalSingularityItem.recipeValues[i], oreNames[i], true));
                 Grinder.catalyst.getInput().add(new ItemStack(ThermalSingularityItem.instance, 1, i));
             }
             i++;

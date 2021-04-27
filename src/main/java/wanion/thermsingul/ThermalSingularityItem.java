@@ -14,7 +14,7 @@ public final class ThermalSingularityItem extends ItemSingularity
 {
     public final static ThermalSingularityItem instance = new ThermalSingularityItem();
 
-    public static final int[] recipeValues = new int[]{75, 25, 100, 90, 75};
+    public static final int[] recipeValues = new int[]{1980, 510, 3000, 2700, 2250};
     public static final String[] thermTypes = new String[]{"shiny", "manaInfused", "signalum", "lumium", "enderium"};
     private static final int[] clearer = new int[]{0x69D6FC, 0x6499BC, 0xE55D00, 0xD8B44E, 0x107272};
     private static final int[] darker = new int[]{0x44CCFC, 0x436071, 0xA52300, 0xD4A41B, 0x093A3F};
